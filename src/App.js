@@ -48,8 +48,9 @@ function App() {
         </div>
       </header>
       <body className="App-body">
+        <div style={{height: 100}}></div>
           <div style={{height: 100}}>
-            <h3 style={{margin: 'auto', width: '100%'}}>Contact me</h3>
+            <h3>Contact me</h3>
           </div>
             <List component="nav" aria-label="main mailbox folders" style={{marginLeft: 50, marginRight: 50}}>
               <ListItem button onClick={() => window.open("https://www.facebook.com/hiep.marin", "_blank")}>

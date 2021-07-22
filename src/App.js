@@ -13,6 +13,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,7 +51,7 @@ function App() {
       <body className="App-body">
         <div style={{height: 100}}></div>
           <div style={{height: 100}}>
-            <h3>Contact me</h3>
+            <h2>Contact me</h2>
           </div>
             <List component="nav" aria-label="main mailbox folders" style={{marginLeft: 50, marginRight: 50}}>
               <ListItem button onClick={() => window.open("https://www.facebook.com/hiep.marin", "_blank")}>
@@ -69,7 +70,7 @@ function App() {
               </ListItem>
               <Divider />
 
-              <ListItem button>
+              <ListItem button onClick={() => window.open("tel:+84916367574")}>
                 <PhoneIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </PhoneIcon>
@@ -94,19 +95,27 @@ function App() {
               </ListItem>
               <Divider />
 
-              <ListItem button onClick={() => window.open("com.facebook.katana")}>
-                <FacebookIcon style={{marginRight: 20}}>
+              <ListItem button onClick={() => window.open("geo:10.8220128,106.7773103")}>
+                <LocationOnIcon style={{marginRight: 20}}>
                   <DraftsIcon />
-                </FacebookIcon>
-              <ListItemText primary="test open app" />
+                </LocationOnIcon>
+              <ListItemText primary="test address 1" />
               </ListItem>
               <Divider />
 
-              <ListItem button onClick={() => window.open("tel:0916367574")}>
+              <ListItem button onClick={() => window.open("https://www.google.com/maps/@10.8220022,106.7774521,20.96z?hl=vi-VN")}>
+                <LocationOnIcon style={{marginRight: 20}}>
+                  <DraftsIcon />
+                </LocationOnIcon>
+              <ListItemText primary="test address 2" />
+              </ListItem>
+              <Divider />
+
+              <ListItem button onClick={() => window.open("BEGIN:VCARD VERSION:3.0 FN:Hiep TEL:0916367574 EMAIL:tranlochiep1111@gmail.com URL:my-app-heroku-marin.herokuapp.com END:VCARD")}>
                 <FacebookIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </FacebookIcon>
-              <ListItemText primary="test add phone" />
+              <ListItemText primary="test add contact" />
               </ListItem>
             </List>
       </body>

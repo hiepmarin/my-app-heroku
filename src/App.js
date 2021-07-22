@@ -14,6 +14,13 @@ import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import WifiIcon from '@material-ui/icons/Wifi';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -95,27 +102,39 @@ function App() {
               </ListItem>
               <Divider />
 
+              <MobileView>
               <ListItem button onClick={() => window.open("geo:10.8220128,106.7773103")}>
                 <LocationOnIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </LocationOnIcon>
-              <ListItemText primary="test address 1" />
+              <ListItemText primary="address" />
               </ListItem>
               <Divider />
+              </MobileView>
 
+              <BrowserView>
               <ListItem button onClick={() => window.open("https://www.google.com/maps/@10.8220022,106.7774521,20.96z?hl=vi-VN")}>
                 <LocationOnIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </LocationOnIcon>
-              <ListItemText primary="test address 2" />
+              <ListItemText primary="address" />
               </ListItem>
               <Divider />
+              </BrowserView>
 
               <ListItem button onClick={() => window.open("BEGIN:VCARD VERSION:3.0 FN:Hiep TEL:0916367574 EMAIL:tranlochiep1111@gmail.com URL:my-app-heroku-marin.herokuapp.com END:VCARD")}>
                 <FacebookIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </FacebookIcon>
               <ListItemText primary="test add contact" />
+              </ListItem>
+              <Divider />
+
+              <ListItem button onClick={() => window.open("Network Name: M2007J3SG Authentication Type: WPA/WP2 PERSONAL Encryption Type: NONE Password: 123456789")}>
+                <WifiIcon style={{marginRight: 20}}>
+                  <DraftsIcon />
+                </WifiIcon>
+              <ListItemText primary="Connect to my wifi" />
               </ListItem>
             </List>
       </body>

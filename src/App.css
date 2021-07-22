@@ -23,6 +23,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-body {
+  align-items: center;
+  min-height: 2000px;
+}
 
 .App-link {
   color: #61dafb;

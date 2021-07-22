@@ -122,19 +122,11 @@ function App() {
               <Divider />
               </BrowserView>
 
-              <ListItem button onClick={() => window.open("BEGIN:VCARD VERSION:3.0 FN:Hiep TEL:0916367574 EMAIL:tranlochiep1111@gmail.com URL:my-app-heroku-marin.herokuapp.com END:VCARD")}>
-                <FacebookIcon style={{marginRight: 20}}>
-                  <DraftsIcon />
-                </FacebookIcon>
-              <ListItemText primary="test add contact" />
-              </ListItem>
-              <Divider />
-
-              <ListItem button onClick={() => window.open("Network Name: M2007J3SG Authentication Type: WPA/WP2 PERSONAL Encryption Type: NONE Password: 123456789")}>
+              <ListItem button onClick={() => URL("Network Name: M2007J3SG Authentication Type: WPA/WP2 PERSONAL Encryption Type: NONE Password: 123456789", "_blank")}>
                 <WifiIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </WifiIcon>
-              <ListItemText primary="Connect to my wifi" />
+              <ListItemText primary="connect to my wifi" />
               </ListItem>
             </List>
       </body>

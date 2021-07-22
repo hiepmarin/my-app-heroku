@@ -93,6 +93,21 @@ function App() {
               <ListItemText primary="hiep.marin" />
               </ListItem>
               <Divider />
+
+              <ListItem button onClick={() => window.open("com.facebook.katana")}>
+                <FacebookIcon style={{marginRight: 20}}>
+                  <DraftsIcon />
+                </FacebookIcon>
+              <ListItemText primary="test open app" />
+              </ListItem>
+              <Divider />
+
+              <ListItem button onClick={() => window.open("tel:0916367574")}>
+                <FacebookIcon style={{marginRight: 20}}>
+                  <DraftsIcon />
+                </FacebookIcon>
+              <ListItemText primary="test add phone" />
+              </ListItem>
             </List>
       </body>
     </div>

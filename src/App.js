@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+document.title = "Hiep's website"
+
 function App() {
   return (
     <div className="App">
@@ -117,17 +119,10 @@ function App() {
                 <LocationOnIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </LocationOnIcon>
-              <ListItemText primary="address" />
+              <ListItemText primary="70D 185 Street, Phuoc Long B Ward, Thu Duc City, Ho Chi Minh City" />
               </ListItem>
-              <Divider />
               </BrowserView>
 
-              <ListItem button onClick={() => URL("Network Name: M2007J3SG Authentication Type: WPA/WP2 PERSONAL Encryption Type: NONE Password: 123456789", "_blank")}>
-                <WifiIcon style={{marginRight: 20}}>
-                  <DraftsIcon />
-                </WifiIcon>
-              <ListItemText primary="connect to my wifi" />
-              </ListItem>
             </List>
       </body>
     </div>

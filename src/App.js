@@ -109,7 +109,7 @@ function App() {
                 <LocationOnIcon style={{marginRight: 20}}>
                   <DraftsIcon />
                 </LocationOnIcon>
-              <ListItemText primary="address" />
+              <ListItemText primary="70D 185 Street, Phuoc Long B Ward, Thu Duc City, Ho Chi Minh City" />
               </ListItem>
               <Divider />
               </MobileView>
